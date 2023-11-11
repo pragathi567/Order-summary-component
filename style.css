@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+.container{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.bottom{
+    padding: 7%;
+    text-align: center;
+}
+.title{
+    color: hsl(245, 75%, 13%);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.sub-title{
+   color: #978f8f;
+   margin-bottom: 25px;
+}
+.plan-box{
+    background-color: hsla(225, 25%, 84%,.2);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.planbox-left{
+    display: flex;
+    align-items: center;
+}
+.annual{
+    margin-left: 20px;
+}
+
+.head{
+    color:hsl(245, 75%, 13%);
+    font-weight: 900;
+    font-size: 15px;
+}
+.para{
+    font-size: 14px;
+    color:  #978f8f;
+    padding-top: 2px;
+}
+.plan-box a{
+    color:hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.proceed-btn{
+    display: block;
+    text-decoration: none;
+    background-color:  hsl(245, 75%, 52%);
+    padding: 20px 0;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.order{
+    text-decoration: none;
+    color: #978f8f;
+    font-weight: 900;
+}
+.plan-box a:hover{
+    text-decoration: none;
+    color: hsla(245, 39%, 54%,.75);
+    transition: .3s;
+}
+.proceed-btn:hover{
+    background-color:hsla(245, 39%, 54%,.75);
+    transition: .3s;
+}
+.order:hover{
+    color:  hsl(245, 75%, 13%);
+    transition: .3s;
+}
+
+@media only screen and (max-width:425px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        width: 87%;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .plan-box{
+        padding: 12px;
+    }
+    .annual{
+        margin-left: 10px;
+    }
+    .proceed-btn{
+        font-size: 13px;
+    }
+    .order{
+        font-size: 13px;
+    }
+    .plan-box a{
+        font-size: 13px;
+    }
+}
